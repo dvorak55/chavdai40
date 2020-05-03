@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP PRTR5V0U4D
+D Ultra low capacitance quadruple rail-to-rail ESD protection, SOT457(SC-74) 
+K usb ethernet
+F https://datasheet.lcsc.com/szlcsc/Nexperia-PRTR5V0U4D-125_C96236.pdf
+$ENDCMP
+#
+#End Doc Library
