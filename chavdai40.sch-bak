@@ -2355,7 +2355,7 @@ U 1 1 5EBF9409
 P 7800 1425
 F 0 "logo1" H 7900 1471 50  0000 L CNN
 F 1 "Chavdai40%" H 7900 1380 50  0000 L CNN
-F 2 "Type-C:logo-small" H 7800 1425 50  0001 C CNN
+F 2 "Type-C:logo2-small" H 7800 1425 50  0001 C CNN
 F 3 "~" H 7800 1425 50  0001 C CNN
 	1    7800 1425
 	1    0    0    -1  
