@@ -3,7 +3,7 @@
  - Chavdai40%は、ちゃぶだいよんじゅっぱーせんと、と読みます
  - 古き良きちゃぶ台をイメージしました
 
-![Logo](https://github.com/dvorak55/chavdai40/blob/master/logo_chavdai40/logo2-small.png)
+![Logo](https://github.com/dvorak55/chavdai40/blob/master/logo_chavdai40/logo2-small2.png)
 
 ## 概要
 Chavdai40%は、以下の条件を満たすよう設計した自作キーボードです。  
@@ -98,15 +98,52 @@ Chavdai40%では「分割スペースキー」と「長いスペースキー」�
 ### １．完成写真を見て、どんなデコレーションをしようか悩む
 
 ### ２．カモ井加工紙のマスキングテープやリメイクシートを購入する
+注意点：Chavdai40%の基板サイズが 横幅：283mm、奥行き：92mmです。このサイズ以上のデコレーション用テープorシールが必要です。  
+
+
 ### ３．本体の表面（ちゃぶだいロゴのある方の面）にマスキングテープやリメイクシートを切り貼りする
+こちらの面が表面です。  
+![impl-2](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-2.jpg)
+この組立手順では以下のリメイクシート（mtリメイクシート Kapitza　SUN）を用います。  
+https://shop.masking-tape.jp/products/detail.php?product_id=106147  
+ピンクの丸い模様がいい感じに可愛いですね。
+
+※ マスキングテープを貼る場合は、幅100mmのマスキングテープだと楽です。何が楽かというと、1回貼れば終わるのが楽です。  
+基板の奥行きが92mmほどあるので、幅50mmのマスキングテープの場合には、2回に分けて貼る必要があり多少大変です。  
+
+リメイクシートはサイズが大きいので、剥離紙を剥がす前に基板サイズよりちょっと大きい程度に切り取ります。
+![impl-3](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-3.jpg)
+
+剥離紙を剥がして貼り付けますが、USB端子のところだけシートを切り取ります。  
+案外難しいかもですが、このように端子のところだけシートを切ってください。  
+![impl-4](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-4.jpg)
+
+その後、裏返してカッターで綺麗にはみ出したシートを切り取ります。  
+![impl-5](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-5.jpg)
+この時、USB端子のところだけ浮いてしまうので、段差のあるところで切ると良いです。
+
+切り取った写真。  
+![impl-6](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-6.jpg)
+mtのリメイクシートは基板サイズに比べて大きいので、何回か失敗してもやり直しがききます。
+
 ### ４．キースイッチを本体に挿す
+次に、この
+
+
 ### ５．キースイッチを本体にはんだ付けする
+
 ### ６．キーキャップとスタビライザーを取り付ける
+
 ### ７．USBケーブルでPCにつなぎ、入力確認する
+
 ### ８．デフォルト以外のキーマップに変更する場合、QMKを用いてキーマップを変更する
+
 ### ９．キーマップが確定し、動作確認を完了する
+
 ### １０．本体の裏面にマスキングテープやリメイクシートを切り貼りする
+
 ### １１．必要に応じて、本体の側面にマスキングテープを切り貼りする
+
 
 
 ※以下、完成写真や組立手順を追記予定です。
