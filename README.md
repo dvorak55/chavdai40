@@ -61,14 +61,14 @@ Chavdai40%では「分割スペースキー」と「長いスペースキー」�
 
 ## 44キーを選んだ場合　別途ご用意頂く部品
 1. スタビライザー（2U）　4個
-2. キースイッチ（MX互換）　44個
+2. PCBマウント（5ピン）のキースイッチ（MX互換）　44個
 3. キーキャップセット　1セット　※スペースキー分割のため2.25Uシフトキーと二個目の2.75シフトキーが必要です
 4. USB-C to USB-A ケーブル　1本
 
 ## 42キーを選んだ場合　別途ご用意頂く部品
 1. スタビライザー（2U）　2個
 2. スタビライザー（6.25U）　1個
-3. キースイッチ（MX互換）　42個
+3. PCBマウント（5ピン）のキースイッチ（MX互換）　42個
 4. キーキャップセット　1セット
 5. USB-C to USB-A ケーブル　1本
 
@@ -127,10 +127,32 @@ https://shop.masking-tape.jp/products/detail.php?product_id=106147
 mtのリメイクシートは基板サイズに比べて大きいので、何回か失敗してもやり直しがききます。
 
 ### ４．キースイッチを本体に挿す
-次に、この
+次に、キースイッチを本体に挿していきます。  
+デコレーションしない場合は簡単に挿せると思います。  
+デコレーションする場合、以下のように光に透かして穴を確認します。  
+![impl-7](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-7.jpg)
+
+穴を確認したところで、スイッチを挿していきます。  
+![impl-8](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-8.jpg)
+キースイッチの金属端子が曲がりやすいので、金属端子を先に挿してから全体を挿すようにすると良いです。
+
+キースイッチによって多少挿しやすさが違いますが、何も考えずに挿していくと、横から見てスイッチが浮いてしまいます。  
+![impl-9](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-9.jpg)
+これを解消するために、基板を平らな場所に置いて、上から押してあげます。スイッチが本体に刺さりきるまで、結構押します。  
+![impl-10](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-10.jpg)
+キースイッチと本体の間に隙間がなくなればOKです。  
+![impl-11](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-11.jpg)
+※もしどうしても最後までスイッチが入り切らない場合は、その状態でOKです。スイッチがきちんと本体に固定されれば問題はありません。  
+
+キースイッチ42個の場合、以下のようになります。  
+![impl-12](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-12.jpg)
+
+キースイッチ44個の場合、以下のようになります。
+![impl-13](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-13.jpg)
 
 
 ### ５．キースイッチを本体にはんだ付けする
+キースイッチを本体に挿したあと、基板を裏返します。  
 
 ### ６．キーキャップとスタビライザーを取り付ける
 
