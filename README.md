@@ -16,6 +16,10 @@ Chavdai40%は、以下の条件を満たすよう設計した自作キーボー�
 
 要は、安くてお手軽だけどある程度ユニークな小型キーボード、ということです。
 
+## キーボードの完成写真
+Chavdai40%の組立例です。  
+
+
 ## 特筆すべき点
 Chavdai40%は、なにもしなければただの緑色の基板の自作キーボードですが、  
 なんと、カモ井加工紙様のmt：マスキングテープを用いることで、お好きな柄になります。  
@@ -30,7 +34,8 @@ https://www.masking-tape.jp
     - ただし、HHKB配列専用のキーキャップセットは使えません。
  - もちろん、高価なGMK等のキーキャップセットも使える
     - 一般的なキーキャップセットにはすべて対応しています。
-    - GMKというお高めなキーキャップセットをご用意すると、2.25Uシフトキーと二個目の2.75シフトキーを使ってスペースキーが分割できます
+    - GMKというお高めなキーキャップセットをご用意すると、2個目の2.25Uシフトキーと2.75シフトキーを使ってスペースキーが分割できます。
+    - ※2個目の2.25Uシフトキーが入っていないキーキャップセットではスペースキーが分割できません。
  - ※JIS等の縦長Enterキーには対応していません
  - ネジ締めは一切不要で、細かい電子部品のハンダ付けもありません
     - キースイッチを本体にはんだ付けするだけで完成します
@@ -38,20 +43,27 @@ https://www.masking-tape.jp
     - カモ井加工紙様の壁紙用マスキングテープ・リメイクシート等で可愛く・格好良く彩れます
  - QMKに対応しており、キーカスタマイズが可能
  - USB-C端子採用。リバーシブルでケーブル取り回しやすい
+    - しかもUSB-C端子は本体に実装済みな！
  - 搭載できるキースイッチの種類は、Cherry MX互換のキースイッチです
  - スペースキーを分割するかしないかで、他に必要な部品が少し異なります
  - あらかじめファームウェアを書き込んだ上で動作確認をしています
 
 ## Kitに入っている部品
 1. 本体（2枚のPCBが接着されたもの）　1つ
-2. ゴム足　4つ
-3. 予備の電子部品（ダイオード2個）
+2. ゴム足　4つ　　←これは一番最後に取り付けます
+3. 予備の電子部品（ダイオード2個）　　←これは組立時には不要だと思いますが、念の為に同梱しています
+4. 問い合わせ先が記載された紙　1枚　　←ご不明点ありましたらこちらへお願いいたします
+
+## その他の問い合わせ先
+twitter: dombrick45 https://twitter.com/dombrick45  
+はてなブログ: dvorak55 https://dvorak55.hatenadiary.jp  
 
 ## キーレイアウト
 Chavdai40%では「分割スペースキー」と「長いスペースキー」のどちらを搭載するか、選べます。  
 まず、このどちらかを選んでください。  
 これにより、別途ご用意頂く部品の数が違います。  
-※一般的なキーキャップセットを使いたい場合は、長いスペースキー：42キーを選ぶしかできません。
+※一般的なキーキャップセットを使いたい場合は、長いスペースキー：42キーを選ぶのが良いです。
+※一般的なキーキャップセットでも、Backspaceキー（サイズは2U）を分割スペースキーとして使うことは可能ですが、少し隙間が空きます。
 
 ### 分割スペースキーのキーレイアウト　44キー
 ![44key](https://github.com/dvorak55/chavdai40/blob/master/keylayout_chavdai40/44key.png)
@@ -60,14 +72,14 @@ Chavdai40%では「分割スペースキー」と「長いスペースキー」�
 ![42key](https://github.com/dvorak55/chavdai40/blob/master/keylayout_chavdai40/42key.png)
 
 ## 44キーを選んだ場合　別途ご用意頂く部品
-1. スタビライザー（2U）　4個
+1. PCBマウントタイプのスタビライザー（2U）　4個
 2. PCBマウント（5ピン）のキースイッチ（MX互換）　44個
 3. キーキャップセット　1セット　※スペースキー分割のため2.25Uシフトキーと二個目の2.75シフトキーが必要です
 4. USB-C to USB-A ケーブル　1本
 
 ## 42キーを選んだ場合　別途ご用意頂く部品
-1. スタビライザー（2U）　2個
-2. スタビライザー（6.25U）　1個
+1. PCBマウントタイプのスタビライザー（2U）　2個
+2. PCBマウントタイプのスタビライザー（6.25U）　1個
 3. PCBマウント（5ピン）のキースイッチ（MX互換）　42個
 4. キーキャップセット　1セット
 5. USB-C to USB-A ケーブル　1本
@@ -153,12 +165,80 @@ mtのリメイクシートは基板サイズに比べて大きいので、何回
 
 ### ５．キースイッチを本体にはんだ付けする
 キースイッチを本体に挿したあと、基板を裏返します。  
+すると、このように基板からスイッチの端子が出ております。  
+![impl-14](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-14.jpg)
+
+スイッチの端子をすべてはんだ付けします。  
+既に実装されている部品をハンダこてで外してしまわないように、ご注意ください。  
+
+![impl-15](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-15.jpg)
+はんだ付けをします。
+![impl-16](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-16.jpg)
+
+![impl-17](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-17.jpg)
+すべてのスイッチの端子をはんだ付けします。
+![impl-18](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-18.jpg)
+
+はんだ付けの際に、基板にレジンがついてしまうことがあります。  
+![impl-19](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-19.jpg)
+はんだ付けが終わったら、こういうレジンを基板からはがしてください。  
+レジンは少しこするだけではがれるはずです。
 
 ### ６．キーキャップとスタビライザーを取り付ける
+キットに必要なスタビライザーを用意します。  
+![impl-20](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-20.jpg)
+
+スタビライザーを取り付ける向きは、大きい穴の方に横棒がが来るようにします。  
+エンターキーのスタビライザーは、このような向きです。  
+![impl-21](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-21.jpg)
+
+シフトキーのスタビライザーは、このような向きです。  
+![impl-22](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-22.jpg)
+
+スペースキーのスタビライザーは、このような向きです。  
+![impl-23](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-23.jpg)
+
+スタビライザーもキースイッチと同様に、マスキングテープやリメイクシートを破るように基板に差し込みます。  
+![impl-24](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-24.jpg)
+
+大きい穴（横棒が付いている方）から挿し込み、奥まで挿したら、小さい穴を挿し込みます。  
+![impl-25](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-25.jpg)
+
+スタビライザーを挿し込む時、穴にかかっている両面テープが引っかかったり破れたりしますが、問題ありません。  
+![impl-26](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-26.jpg)
+
+スタビライザーが搭載できました。  
+![impl-27](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-27.jpg)
+
 
 ### ７．USBケーブルでPCにつなぎ、入力確認する
+スイッチのはんだ付けがうまくいっているか、何かしら問題が発生していないかを確認するため、入力確認をします。  
+Chavdai40%は、デフォルトでQWERTY配列のキーマップが使えるようになっています。  
+USBケーブルでPCもしくはMacに繋いで、メモ帳を開いて、アルファベットやエンター等、入力がきちんとされるかを確認します。  
 
 ### ８．デフォルト以外のキーマップに変更する場合、QMKを用いてキーマップを変更する
+Chavdai40%はQMKに対応したキーボードですので、キーマップを変更することができます。  
+そのためにQMKというソフトウェアをダウンロードし、ご自分のPCやMacでプログラムを書き換えてコンパイルして、  
+完成したバイナリファイルをキーボードに書き込むという作業が必要となるのですが……  
+
+
+QMK Configuratorというツールを使うと、簡単にプログラムをコンパイルしてバイナリファイルをダウンロードすることができます。  
+↓  
+https://config.qmk.fm/#/chavdai40/LAYOUT_42key
+
+バイナリファイルを書き込むためには、QMK Toolboxというツールを使います。  
+↓  
+https://github.com/qmk/qmk_toolbox/releases
+
+このあたりのツールの使い方は、  
+サリチル酸氏（自キー界の導師のようなすごい人）のウェブサイトにわかりやすく掲載されておりますので、  
+ぜひご覧になってください。  
+
+●QMK Configuratorの使い方  
+https://salicylic-acid3.hatenablog.com/entry/qmk-configurator  
+●QMK Toolboxの使い方  
+https://salicylic-acid3.hatenablog.com/entry/qmk-toolbox  
+
 
 ### ９．キーマップが確定し、動作確認を完了する
 
