@@ -18,6 +18,25 @@ Chavdai40%は、以下の条件を満たすよう設計した自作キーボー�
 
 ## キーボードの完成写真
 Chavdai40%の組立例です。  
+### 組立例１（Chavdai40% ＋ mtリメイクシートKapitza SUN ＋ Tai-Hao ABS Cubic Miami Surf）
+赤色の丸がかわいいリメイクシートと、ピンク色のキーキャップを組み合わせると、とってもポップな色合いになります。  
+![chav-taihao1](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/chav-taihao1.jpg)
+アクセントカラーの青色キーキャップが華を添えている感じですね。
+![chav-taihao2](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/chav-taihao2.jpg)
+リメイクシートとキーキャップセットは以下で購入可能です（2020年8月13日現在）  
+●リメイクシート（mtマスキングテープのウェブサイト）
+https://shop.masking-tape.jp/products/detail.php?product_id=106147  
+●Tai-haoキーキャップ（遊舎工房ウェブサイト）
+https://yushakobo.jp/shop/tai-hao-abs-cubic-miami-surf/  
+
+### 組立例２（Chavdai40% ＋ mtリメイクシートKapitza FUJI ＋ GMK ECLIPSE）
+青色の三角がクールなリメイクシートと、青色黒色のキーキャップを組み合わせると、とっても引き締まった色合いになります。  
+![chav-eclipse1](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/chav-eclipse1.jpg)
+GMKのキーキャップセットなので、スペースキーを分割できます。この写真ではスペースキーが打ちやすいように上下逆につけています。  
+![chav-eclipse2](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/chav-eclipse2.jpg)
+リメイクシートは以下から購入可能です（2020年8月13日現在）　キーキャップセットは今は購入できません。
+●リメイクシート（mtマスキングテープのウェブサイト）
+https://shop.masking-tape.jp/products/detail.php?product_id=106148  
 
 
 ## 特筆すべき点
@@ -235,7 +254,7 @@ mtのリメイクシートは基板サイズに比べて大きいので、何回
 Chavdai40%は、デフォルトでQWERTY配列のキーマップが使えるようになっています。  
 USBケーブルでPCもしくはMacに繋いで、メモ帳を開いて、アルファベットやエンター等、入力がきちんとされるかを確認します。  
 
-#### きちんと動作しない場合  
+#### ★きちんと動作しない場合  
 まずは、以下をご確認してみてください。その後、私にお問い合わせください。お問い合わせ先はキットに同梱してあります。  
  - 特定のキーだけが入力できない場合　　→　　そのスイッチのはんだ付けがうまくいっていない可能性があります
  - 特定の列・行のキーだけ入力できない場合　　→　　基板の故障の可能性があります
@@ -250,11 +269,11 @@ Chavdai40%はQMKに対応したキーボードですので、キーマップを�
 
 ●とりあえず試しに使ってみたい場合  
 こちらで作成したキーマップを42キーと44キーそれぞれ3種類ご用意してあります。  
-※3種類のキーマップで、レイヤーキーを押したときのキーは共通です。
+※3種類のキーマップで、レイヤーキーを押したときのキーは共通です。  
 42キー  
-![chavdai1-6keymaps](https://github.com/dvorak55/chavdai40/blob/master/keylayout_chavdai40/chavdai1-6keymaps.png)
-44キー  
 ![chavdai1-42keymaps](https://github.com/dvorak55/chavdai40/blob/master/keylayout_chavdai40/chavdai1-42keymaps.png)
+44キー  
+![chavdai1-6keymaps](https://github.com/dvorak55/chavdai40/blob/master/keylayout_chavdai40/chavdai1-6keymaps.png)
 
 以下の場所からバイナリファイルをダウンロードできます。  
 https://github.com/dvorak55/chavdai40/tree/master/hex
@@ -287,12 +306,13 @@ https://salicylic-acid3.hatenablog.com/entry/qmk-toolbox
 
 ### ９．キーマップが確定し、動作確認を完了する
 想定通りのキーが入力できるようになれば、入力機器としてはきちんと使えるようになりました。 
-デコレーションしている場合、もう少しだけ私達のChavdai40%作りは続くんじゃよ。
 
-#### 本体の裏面にテープや紙を貼り、部品の露出を回避する
+#### ９−１．本体の裏面にテープや紙を貼り、部品の露出を回避する（デコレーションしない場合に必要な手順）
 デコレーションしない場合、本体の裏面に部品が露出しています。  
 そのままだと部品が引っかかったりして故障の原因になるため、本体の裏面に何かしらのテープや紙を貼ってください。  
 Chavdai40%の包装紙を基板サイズに切り取って、両面テープで裏面に貼り付けるのが一番簡単だと思います。
+
+デコレーションしている場合、もう少しだけ僕たちのChavdai40%作りは続くんじゃよ！
 
 ### １０．本体の裏面にマスキングテープやリメイクシートを切り貼りする
 はんだ付けが完了しているため、裏面にもマスキングテープまたはリメイクシートを貼ります。  
