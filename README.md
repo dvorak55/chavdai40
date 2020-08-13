@@ -18,6 +18,25 @@ Chavdai40%は、以下の条件を満たすよう設計した自作キーボー�
 
 ## キーボードの完成写真
 Chavdai40%の組立例です。  
+### 組立例１（Chavdai40% ＋ mtリメイクシートKapitza SUN ＋ Tai-Hao ABS Cubic Miami Surf）
+赤色の丸がかわいいリメイクシートと、ピンク色のキーキャップを組み合わせると、とってもポップな色合いになります。  
+![chav-taihao1](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/chav-taihao1.jpg)
+アクセントカラーの青色キーキャップが華を添えている感じですね。
+![chav-taihao2](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/chav-taihao2.jpg)
+リメイクシートとキーキャップセットは以下で購入可能です（2020年8月13日現在）  
+●リメイクシート（mtマスキングテープのウェブサイト）
+https://shop.masking-tape.jp/products/detail.php?product_id=106147  
+●Tai-haoキーキャップ（遊舎工房ウェブサイト）
+https://yushakobo.jp/shop/tai-hao-abs-cubic-miami-surf/  
+
+### 組立例２（Chavdai40% ＋ mtリメイクシートKapitza FUJI ＋ GMK ECLIPSE）
+青色の三角がクールなリメイクシートと、青色黒色のキーキャップを組み合わせると、とっても引き締まった色合いになります。  
+![chav-eclipse1](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/chav-eclipse1.jpg)
+GMKのキーキャップセットなので、スペースキーを分割できます。この写真ではスペースキーが打ちやすいように上下逆につけています。  
+![chav-eclipse2](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/chav-eclipse2.jpg)
+リメイクシートは以下から購入可能です（2020年8月13日現在）　キーキャップセットは今は購入できません。
+●リメイクシート（mtマスキングテープのウェブサイト）
+https://shop.masking-tape.jp/products/detail.php?product_id=106148  
 
 
 ## 特筆すべき点
