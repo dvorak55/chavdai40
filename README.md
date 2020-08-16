@@ -73,6 +73,13 @@ https://www.masking-tape.jp
 3. 予備の電子部品（ダイオード2個）　　←これは組立時には不要だと思いますが、念の為に同梱しています
 4. 問い合わせ先が記載された紙　1枚　　←ご不明点ありましたらこちらへお願いいたします
 
+Chavdai40%の本体  
+![impl-31](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-31.jpg)
+
+ゴム足と予備の電子部品は包装紙にマスキングテープで貼り付けてあります  
+![impl-6](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-6.jpg)
+
+
 ## その他の問い合わせ先
 twitter: dombrick45 https://twitter.com/dombrick45  
 はてなブログ: dvorak55 https://dvorak55.hatenadiary.jp  
