@@ -183,6 +183,9 @@ mtのリメイクシートは基板サイズに比べて大きいので、何回
 デコレーションする場合、以下のように光に透かして穴を確認します。  
 ![impl-7](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-7.jpg)
 
+スペースキーの分割の有無によって、スペースキー周辺のキースイッチを搭載する場所が異なります。  
+![impl-7-2](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-7-2.jpg)
+
 穴を確認したところで、スイッチを挿していきます。  
 ![impl-8](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-8.jpg)
 キースイッチの金属端子が曲がりやすいので、金属端子を先に挿してから全体を挿すようにすると良いです。
@@ -249,6 +252,11 @@ mtのリメイクシートは基板サイズに比べて大きいので、何回
 スタビライザーが搭載できました。  
 ![impl-27](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-27.jpg)
 
+この状態になったら、やっとキーキャップを取り付けます。  
+以下のように取り付けてみました。  
+![impl-27-2](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-27-2.jpg)
+44キーの場合は、以下のように取り付けてみました。  
+![impl-27-3](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-27-3.jpg)
 
 ### ７．USBケーブルでPCにつなぎ、入力確認する
 スイッチのはんだ付けがうまくいっているか、何かしら問題が発生していないかを確認するため、入力確認をします。  
@@ -277,7 +285,7 @@ Chavdai40%はQMKに対応したキーボードですので、キーマップを�
 ![chavdai1-6keymaps](https://github.com/dvorak55/chavdai40/blob/master/keylayout_chavdai40/chavdai1-6keymaps.png)
 
 以下の場所からバイナリファイルをダウンロードできます。  
-https://github.com/dvorak55/chavdai40/tree/master/hex
+https://github.com/dvorak55/chavdai40/tree/master/hex  
 基本的にQWERTY配列のファイルをお使いになると思いますが、作者が使っているDvorak配列や、素晴らしいEucalyn配列も作りました。  
 
 ●キーを自分好みにカスタマイズして使いたい場合  
@@ -328,9 +336,9 @@ Chavdai40%は本体の裏面に部品が露出しているため、これを貼�
 
 ### １２．ゴム足をつける
 最後に、本体の裏面にゴム足を付けてください。  
-付ける場所に成約はありませんが、四隅にするのが良いと思います。  
-ただし、キーを押す力がすごく強い場合、四隅にゴム足をつけると打鍵時に本体がたわんで机に付いてしまう可能性もあります。  
-もしそのような状態になったら、ゴム足を少し内側につけると改善されます。  
-※なるべくそうならないように基板が上に反るように設計しております。  
+付ける場所はある程度自由ですが、以下の写真のように、四隅より少し内側にするのが良いと思います。  
+![impl-30](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-30.jpg)
 
-※以下、完成写真や組立手順を追記予定です。
+ただし、キーを押す力がすごく強い場合、打鍵時に本体がたわんで机に付いてしまう可能性もあります。  
+もしそのような状態になったら、ゴム足をもう少し内側につけると改善されます。  
+※なるべくそうならないように基板が上に反るように設計しております。  
