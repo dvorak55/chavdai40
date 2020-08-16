@@ -187,7 +187,7 @@ mtのリメイクシートは基板サイズに比べて大きいので、何回
 ![impl-8](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-8.jpg)
 キースイッチの金属端子が曲がりやすいので、金属端子を先に挿してから全体を挿すようにすると良いです。
 
-キースイッチによって多少挿しやすさが違いますが、何も考えずに挿していくと、横から見てスイッチが浮いてしまいます。  
+キースイッチによって多少挿しやすさが違いますが、普通に挿していくと、横から見てスイッチが浮いてしまいます。  
 ![impl-9](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-9.jpg)
 これを解消するために、基板を平らな場所に置いて、上から押してあげます。スイッチが本体に刺さりきるまで、結構押します。  
 ![impl-10](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-10.jpg)
