@@ -77,7 +77,7 @@ Chavdai40%の本体
 ![impl-31](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-31.jpg)
 
 ゴム足と予備の電子部品は包装紙にマスキングテープで貼り付けてあります  
-![impl-6](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-6.jpg)
+![impl-32](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-32.jpg)
 
 
 ## その他の問い合わせ先
