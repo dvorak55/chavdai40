@@ -14,50 +14,25 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Connector:Conn_ARM_JTAG_SWD_10 J1
-U 1 1 5EAE1002
-P 2925 5225
-F 0 "J1" H 2625 5800 50  0000 R CNN
-F 1 "Conn_ARM_JTAG_SWD_10" V 2600 5675 50  0000 R CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical" H 2925 5225 50  0001 C CNN
-F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 2575 3975 50  0001 C CNN
-	1    2925 5225
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR016
-U 1 1 5EAE381E
-P 2925 4625
-F 0 "#PWR016" H 2925 4475 50  0001 C CNN
-F 1 "+3.3V" H 2940 4798 50  0000 C CNN
-F 2 "" H 2925 4625 50  0001 C CNN
-F 3 "" H 2925 4625 50  0001 C CNN
-	1    2925 4625
-	1    0    0    -1  
-$EndComp
-Text GLabel 3425 4925 2    50   Input ~ 0
+Text GLabel 3050 5750 2    50   Input ~ 0
 NRST
-Text GLabel 3425 5125 2    50   Input ~ 0
+Text GLabel 3050 5650 2    50   Input ~ 0
 SWCLK
-Text GLabel 3425 5225 2    50   Input ~ 0
+Text GLabel 3050 5550 2    50   Input ~ 0
 SWDIO
-NoConn ~ 3425 5325
-NoConn ~ 3425 5425
 $Comp
 L power:GND #PWR017
 U 1 1 5EAE45F0
-P 2925 5825
-F 0 "#PWR017" H 2925 5575 50  0001 C CNN
-F 1 "GND" H 2930 5652 50  0000 C CNN
-F 2 "" H 2925 5825 50  0001 C CNN
-F 3 "" H 2925 5825 50  0001 C CNN
-	1    2925 5825
+P 3275 5275
+F 0 "#PWR017" H 3275 5025 50  0001 C CNN
+F 1 "GND" H 3280 5102 50  0000 C CNN
+F 2 "" H 3275 5275 50  0001 C CNN
+F 3 "" H 3275 5275 50  0001 C CNN
+	1    3275 5275
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2925 5825 2825 5825
-Connection ~ 2925 5825
+	3275 5275 3050 5275
 $Comp
 L power:GND #PWR013
 U 1 1 5EAF1533
@@ -74,47 +49,19 @@ D-
 Text GLabel 3450 3525 2    50   Input ~ 0
 D+
 $Comp
-L power:+3.3V #PWR01
-U 1 1 5EADDDB4
-P 6075 775
-F 0 "#PWR01" H 6075 625 50  0001 C CNN
-F 1 "+3.3V" H 6090 948 50  0000 C CNN
-F 2 "" H 6075 775 50  0001 C CNN
-F 3 "" H 6075 775 50  0001 C CNN
-	1    6075 775 
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR011
 U 1 1 5EADF47C
-P 5250 3175
-F 0 "#PWR011" H 5250 2925 50  0001 C CNN
-F 1 "GND" H 5255 3002 50  0000 C CNN
-F 2 "" H 5250 3175 50  0001 C CNN
-F 3 "" H 5250 3175 50  0001 C CNN
-	1    5250 3175
+P 6175 3175
+F 0 "#PWR011" H 6175 2925 50  0001 C CNN
+F 1 "GND" H 6180 3002 50  0000 C CNN
+F 2 "" H 6175 3175 50  0001 C CNN
+F 3 "" H 6175 3175 50  0001 C CNN
+	1    6175 3175
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5250 3175 5250 3150
-$Comp
-L MCU_ST_STM32F0:STM32F042K6Ux U1
-U 1 1 5EADB937
-P 5250 2150
-F 0 "U1" H 4925 1175 50  0000 C CNN
-F 1 "STM32F042K6U6" H 4875 1075 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm" H 4850 1250 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00105814.pdf" H 5250 2150 50  0001 C CNN
-	1    5250 2150
-	1    0    0    -1  
-$EndComp
-Text GLabel 5750 2550 2    50   Input ~ 0
-D-
-Text GLabel 5750 2650 2    50   Input ~ 0
-D+
-Text GLabel 6200 2750 2    50   Input ~ 0
+Text GLabel 6725 2675 2    50   Input ~ 0
 SWDIO
-Text GLabel 6200 2850 2    50   Input ~ 0
+Text GLabel 6725 2775 2    50   Input ~ 0
 SWCLK
 $Comp
 L Type-C:HRO-TYPE-C-31-M-12 USB1
@@ -218,183 +165,6 @@ Wire Wire Line
 Connection ~ 2075 3525
 Connection ~ 2000 3425
 Connection ~ 1875 3125
-$Comp
-L Device:C_Small C1
-U 1 1 5EB230F9
-P 5925 875
-F 0 "C1" H 6017 921 50  0000 L CNN
-F 1 "100nF" H 6017 830 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 5925 875 50  0001 C CNN
-F 3 "~" H 5925 875 50  0001 C CNN
-	1    5925 875 
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C2
-U 1 1 5EB2647F
-P 4875 925
-F 0 "C2" H 4967 971 50  0000 L CNN
-F 1 "100nF" H 4967 880 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 4875 925 50  0001 C CNN
-F 3 "~" H 4875 925 50  0001 C CNN
-	1    4875 925 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5150 1250 5150 775 
-Connection ~ 5925 775 
-$Comp
-L power:GND #PWR03
-U 1 1 5EB22A4F
-P 6100 975
-F 0 "#PWR03" H 6100 725 50  0001 C CNN
-F 1 "GND" H 6105 802 50  0000 C CNN
-F 2 "" H 6100 975 50  0001 C CNN
-F 3 "" H 6100 975 50  0001 C CNN
-	1    6100 975 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5150 775  5925 775 
-Wire Wire Line
-	5250 1250 5250 825 
-Wire Wire Line
-	5250 825  4875 825 
-Connection ~ 4875 825 
-$Comp
-L power:+3.3V #PWR05
-U 1 1 5EBA0E93
-P 5675 1025
-F 0 "#PWR05" H 5675 875 50  0001 C CNN
-F 1 "+3.3V" H 5690 1198 50  0000 C CNN
-F 2 "" H 5675 1025 50  0001 C CNN
-F 3 "" H 5675 1025 50  0001 C CNN
-	1    5675 1025
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C3
-U 1 1 5EBA0E9D
-P 5575 1125
-F 0 "C3" H 5667 1171 50  0000 L CNN
-F 1 "100nF" H 5667 1080 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 5575 1125 50  0001 C CNN
-F 3 "~" H 5575 1125 50  0001 C CNN
-	1    5575 1125
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR06
-U 1 1 5EBA0EB3
-P 5900 1225
-F 0 "#PWR06" H 5900 975 50  0001 C CNN
-F 1 "GND" H 5905 1052 50  0000 C CNN
-F 2 "" H 5900 1225 50  0001 C CNN
-F 3 "" H 5900 1225 50  0001 C CNN
-	1    5900 1225
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5350 1250 5350 1025
-Wire Wire Line
-	5350 1025 5575 1025
-Connection ~ 5575 1025
-$Comp
-L Switch:SW_Push SW_BOOT1
-U 1 1 5EC71B98
-P 4125 1950
-F 0 "SW_BOOT1" H 4150 2200 50  0000 C CNN
-F 1 "TS-1187A-B-A-B" H 4025 2125 50  0000 C CNN
-F 2 "random-keyboard-parts:SKQGADE010" H 4125 2150 50  0001 C CNN
-F 3 "~" H 4125 2150 50  0001 C CNN
-	1    4125 1950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR08
-U 1 1 5EC72660
-P 3925 1950
-F 0 "#PWR08" H 3925 1800 50  0001 C CNN
-F 1 "+3.3V" H 3925 1875 50  0000 C CNN
-F 2 "" H 3925 1950 50  0001 C CNN
-F 3 "" H 3925 1950 50  0001 C CNN
-	1    3925 1950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R1
-U 1 1 5EC72F48
-P 4325 2125
-F 0 "R1" V 4175 2125 50  0000 C CNN
-F 1 "10k" V 4250 2125 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4325 2125 50  0001 C CNN
-F 3 "~" H 4325 2125 50  0001 C CNN
-	1    4325 2125
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR09
-U 1 1 5EC72F52
-P 4325 2225
-F 0 "#PWR09" H 4325 1975 50  0001 C CNN
-F 1 "GND" H 4330 2052 50  0000 C CNN
-F 2 "" H 4325 2225 50  0001 C CNN
-F 3 "" H 4325 2225 50  0001 C CNN
-	1    4325 2225
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4750 1950 4325 1950
-Wire Wire Line
-	4325 2025 4325 1950
-Connection ~ 4325 1950
-$Comp
-L Switch:SW_Push SW_RESET1
-U 1 1 5EC9F895
-P 4450 1325
-F 0 "SW_RESET1" H 4050 1500 50  0000 C CNN
-F 1 "TS-1187A-B-A-B" H 4025 1425 50  0000 C CNN
-F 2 "random-keyboard-parts:SKQGADE010" H 4450 1525 50  0001 C CNN
-F 3 "~" H 4450 1525 50  0001 C CNN
-	1    4450 1325
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR07
-U 1 1 5ECA0126
-P 3950 1450
-F 0 "#PWR07" H 3950 1200 50  0001 C CNN
-F 1 "GND" H 3850 1450 50  0000 C CNN
-F 2 "" H 3950 1450 50  0001 C CNN
-F 3 "" H 3950 1450 50  0001 C CNN
-	1    3950 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C4
-U 1 1 5ECA0885
-P 4475 1450
-F 0 "C4" V 4300 1275 50  0000 L CNN
-F 1 "100nF" V 4375 1225 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 4475 1450 50  0001 C CNN
-F 3 "~" H 4475 1450 50  0001 C CNN
-	1    4475 1450
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	4750 1450 4650 1450
-Wire Wire Line
-	3950 1450 4250 1450
-Wire Wire Line
-	4250 1450 4250 1325
-Connection ~ 4250 1450
-Wire Wire Line
-	4250 1450 4375 1450
-Wire Wire Line
-	4650 1325 4650 1450
-Connection ~ 4650 1450
-Wire Wire Line
-	4650 1450 4575 1450
 Wire Wire Line
 	1800 4325 1800 4225
 Connection ~ 1800 4225
@@ -406,46 +176,6 @@ Wire Wire Line
 	2300 4325 2300 3925
 Wire Wire Line
 	2300 3925 1750 3925
-Text GLabel 4725 1450 1    50   Input ~ 0
-NRST
-Wire Wire Line
-	6200 2850 5750 2850
-Wire Wire Line
-	5750 2750 6200 2750
-Wire Wire Line
-	5925 775  6075 775 
-Wire Wire Line
-	5925 975  6100 975 
-Wire Wire Line
-	5575 1025 5675 1025
-Wire Wire Line
-	5575 1225 5900 1225
-Wire Wire Line
-	4800 1025 4875 1025
-$Comp
-L power:GND #PWR04
-U 1 1 5EB952C2
-P 4800 1025
-F 0 "#PWR04" H 4800 775 50  0001 C CNN
-F 1 "GND" H 4700 1025 50  0000 C CNN
-F 2 "" H 4800 1025 50  0001 C CNN
-F 3 "" H 4800 1025 50  0001 C CNN
-	1    4800 1025
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR02
-U 1 1 5EB947AF
-P 4800 825
-F 0 "#PWR02" H 4800 675 50  0001 C CNN
-F 1 "+3.3V" H 4815 998 50  0000 C CNN
-F 2 "" H 4800 825 50  0001 C CNN
-F 3 "" H 4800 825 50  0001 C CNN
-	1    4800 825 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4800 825  4875 825 
 $Comp
 L MX_Alps_Hybrid:MX-NoLED MX?
 U 1 1 5EBA9EC1
@@ -2167,46 +1897,14 @@ Wire Wire Line
 	7275 6450 8975 6450
 Wire Wire Line
 	6275 6450 7275 6450
-Text GLabel 5750 1450 2    50   Input ~ 0
-ROW0
-Text GLabel 5750 1550 2    50   Input ~ 0
-COL12
-Text GLabel 5750 1650 2    50   Input ~ 0
-COL11
-Text GLabel 5750 1750 2    50   Input ~ 0
-COL10
-Text GLabel 5750 1850 2    50   Input ~ 0
-COL9
-Text GLabel 5750 1950 2    50   Input ~ 0
-COL8
-Text GLabel 5750 2050 2    50   Input ~ 0
-COL7
-Text GLabel 5750 2150 2    50   Input ~ 0
-COL6
-Text GLabel 4750 2150 0    50   Input ~ 0
-COL5
-Text GLabel 4750 2250 0    50   Input ~ 0
-COL4
-Text GLabel 4750 2350 0    50   Input ~ 0
-COL3
-Text GLabel 4750 2950 0    50   Input ~ 0
+Text GLabel 5575 2575 0    50   Input ~ 0
 COL0
-Text GLabel 5750 2950 2    50   Input ~ 0
-ROW1
-Text GLabel 4750 2450 0    50   Input ~ 0
-COL2
-Text GLabel 4750 2550 0    50   Input ~ 0
+Text GLabel 5575 2275 0    50   Input ~ 0
 COL1
-Text GLabel 4750 2650 0    50   Input ~ 0
+Text GLabel 5575 2375 0    50   Input ~ 0
 ROW2
-Text GLabel 4750 2750 0    50   Input ~ 0
+Text GLabel 5575 2475 0    50   Input ~ 0
 ROW3
-NoConn ~ 5750 2250
-NoConn ~ 5750 2350
-NoConn ~ 5750 2450
-NoConn ~ 4750 2850
-NoConn ~ 4750 1850
-NoConn ~ 4750 1750
 Wire Wire Line
 	1875 3125 2075 3125
 $Comp
@@ -2317,47 +2015,323 @@ NoConn ~ 2225 3750
 NoConn ~ -725 3825
 NoConn ~ 3125 -400
 $Comp
-L Mechanical:MountingHole SMT1
-U 1 1 5EBBC07D
-P 6825 1250
-F 0 "SMT1" H 6925 1296 50  0000 L CNN
-F 1 "Tooling Hole" H 6925 1205 50  0000 L CNN
-F 2 "random-keyboard-parts:jlcpcb-tooling-hole" H 6825 1250 50  0001 C CNN
-F 3 "~" H 6825 1250 50  0001 C CNN
-	1    6825 1250
+L power:+3.3V #PWR016
+U 1 1 5EAE381E
+P 3275 5175
+F 0 "#PWR016" H 3275 5025 50  0001 C CNN
+F 1 "+3.3V" H 3290 5348 50  0000 C CNN
+F 2 "" H 3275 5175 50  0001 C CNN
+F 3 "" H 3275 5175 50  0001 C CNN
+	1    3275 5175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 5175 3275 5175
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5F50AD83
+P 2850 5275
+F 0 "J1" H 2768 4950 50  0000 C CNN
+F 1 "Conn_01x02" H 2768 5041 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2850 5275 50  0001 C CNN
+F 3 "~" H 2850 5275 50  0001 C CNN
+	1    2850 5275
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J2
+U 1 1 5F50C41C
+P 2850 5650
+F 0 "J2" H 2768 5325 50  0000 C CNN
+F 1 "Conn_01x03" H 2768 5416 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2850 5650 50  0001 C CNN
+F 3 "~" H 2850 5650 50  0001 C CNN
+	1    2850 5650
+	-1   0    0    1   
+$EndComp
+$Comp
+L MCU_ST_STM32F0:STM32F042K6Tx U1
+U 1 1 5F45EE52
+P 6225 2075
+F 0 "U1" H 5775 1125 50  0000 C CNN
+F 1 "STM32F042K6T6" H 5725 1025 50  0000 C CNN
+F 2 "Package_QFP:LQFP-32_7x7mm_P0.8mm" H 5825 1175 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00105814.pdf" H 6225 2075 50  0001 C CNN
+	1    6225 2075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5775 750  5850 750 
+$Comp
+L power:+3.3V #PWR02
+U 1 1 5EB947AF
+P 5775 750
+F 0 "#PWR02" H 5775 600 50  0001 C CNN
+F 1 "+3.3V" H 5790 923 50  0000 C CNN
+F 2 "" H 5775 750 50  0001 C CNN
+F 3 "" H 5775 750 50  0001 C CNN
+	1    5775 750 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole SMT2
-U 1 1 5EBE3D42
-P 6900 1525
-F 0 "SMT2" H 7000 1571 50  0000 L CNN
-F 1 "Tooling Hole" H 7000 1480 50  0000 L CNN
-F 2 "random-keyboard-parts:jlcpcb-tooling-hole" H 6900 1525 50  0001 C CNN
-F 3 "~" H 6900 1525 50  0001 C CNN
-	1    6900 1525
+L power:GND #PWR04
+U 1 1 5EB952C2
+P 5775 950
+F 0 "#PWR04" H 5775 700 50  0001 C CNN
+F 1 "GND" H 5675 950 50  0000 C CNN
+F 2 "" H 5775 950 50  0001 C CNN
+F 3 "" H 5775 950 50  0001 C CNN
+	1    5775 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5775 950  5850 950 
+Wire Wire Line
+	6550 950  6650 950 
+Wire Wire Line
+	6900 900  7075 900 
+Wire Wire Line
+	6900 700  7050 700 
+Connection ~ 6550 950 
+Wire Wire Line
+	6325 950  6550 950 
+Wire Wire Line
+	6325 1175 6325 950 
+$Comp
+L Device:C_Small C3
+U 1 1 5EBA0E9D
+P 6550 1050
+F 0 "C3" H 6642 1096 50  0000 L CNN
+F 1 "100nF" H 6642 1005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6550 1050 50  0001 C CNN
+F 3 "~" H 6550 1050 50  0001 C CNN
+	1    6550 1050
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole SMT3
-U 1 1 5EBE3FF0
-P 6700 1875
-F 0 "SMT3" H 6800 1921 50  0000 L CNN
-F 1 "Tooling Hole" H 6800 1830 50  0000 L CNN
-F 2 "random-keyboard-parts:jlcpcb-tooling-hole" H 6700 1875 50  0001 C CNN
-F 3 "~" H 6700 1875 50  0001 C CNN
-	1    6700 1875
+L power:+3.3V #PWR05
+U 1 1 5EBA0E93
+P 6650 950
+F 0 "#PWR05" H 6650 800 50  0001 C CNN
+F 1 "+3.3V" H 6665 1123 50  0000 C CNN
+F 2 "" H 6650 950 50  0001 C CNN
+F 3 "" H 6650 950 50  0001 C CNN
+	1    6650 950 
 	1    0    0    -1  
 $EndComp
+Connection ~ 5850 750 
+Wire Wire Line
+	6225 750  5850 750 
+Wire Wire Line
+	6225 1175 6225 750 
+Wire Wire Line
+	6125 700  6900 700 
+$Comp
+L power:GND #PWR03
+U 1 1 5EB22A4F
+P 7075 900
+F 0 "#PWR03" H 7075 650 50  0001 C CNN
+F 1 "GND" H 7080 727 50  0000 C CNN
+F 2 "" H 7075 900 50  0001 C CNN
+F 3 "" H 7075 900 50  0001 C CNN
+	1    7075 900 
+	1    0    0    -1  
+$EndComp
+Connection ~ 6900 700 
+Wire Wire Line
+	6125 1175 6125 700 
+$Comp
+L Device:C_Small C2
+U 1 1 5EB2647F
+P 5850 850
+F 0 "C2" H 5942 896 50  0000 L CNN
+F 1 "100nF" H 5942 805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5850 850 50  0001 C CNN
+F 3 "~" H 5850 850 50  0001 C CNN
+	1    5850 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 5EB230F9
+P 6900 800
+F 0 "C1" H 6992 846 50  0000 L CNN
+F 1 "100nF" H 6992 755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6900 800 50  0001 C CNN
+F 3 "~" H 6900 800 50  0001 C CNN
+	1    6900 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR01
+U 1 1 5EADDDB4
+P 7050 700
+F 0 "#PWR01" H 7050 550 50  0001 C CNN
+F 1 "+3.3V" H 7065 873 50  0000 C CNN
+F 2 "" H 7050 700 50  0001 C CNN
+F 3 "" H 7050 700 50  0001 C CNN
+	1    7050 700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5EBA0EB3
+P 6875 1150
+F 0 "#PWR06" H 6875 900 50  0001 C CNN
+F 1 "GND" H 6880 977 50  0000 C CNN
+F 2 "" H 6875 1150 50  0001 C CNN
+F 3 "" H 6875 1150 50  0001 C CNN
+	1    6875 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 1150 6875 1150
 $Comp
 L Mechanical:MountingHole logo1
 U 1 1 5EBF9409
-P 7800 1425
-F 0 "logo1" H 7900 1471 50  0000 L CNN
-F 1 "Chavdai40%" H 7900 1380 50  0000 L CNN
-F 2 "Type-C:logo2-small" H 7800 1425 50  0001 C CNN
-F 3 "~" H 7800 1425 50  0001 C CNN
-	1    7800 1425
+P 7650 1000
+F 0 "logo1" H 7750 1046 50  0000 L CNN
+F 1 "Chavdai40%" H 7750 955 50  0000 L CNN
+F 2 "Type-C:logo2-small" H 7650 1000 50  0001 C CNN
+F 3 "~" H 7650 1000 50  0001 C CNN
+	1    7650 1000
 	1    0    0    -1  
 $EndComp
+$Comp
+L Switch:SW_Push SW_RESET1
+U 1 1 5EC9F895
+P 5425 1250
+F 0 "SW_RESET1" H 5025 1425 50  0000 C CNN
+F 1 "TS-1187A-B-A-B" H 5000 1350 50  0000 C CNN
+F 2 "random-keyboard-parts:SKQGADE010" H 5425 1450 50  0001 C CNN
+F 3 "~" H 5425 1450 50  0001 C CNN
+	1    5425 1250
+	1    0    0    -1  
+$EndComp
+Text GLabel 5700 1375 1    50   Input ~ 0
+NRST
+Text GLabel 5575 2175 0    50   Input ~ 0
+COL2
+Text GLabel 5575 2075 0    50   Input ~ 0
+COL3
+Text GLabel 5575 1975 0    50   Input ~ 0
+COL4
+Text GLabel 5575 1875 0    50   Input ~ 0
+COL5
+Wire Wire Line
+	5625 1375 5550 1375
+Connection ~ 5625 1375
+Wire Wire Line
+	5625 1250 5625 1375
+Wire Wire Line
+	5225 1375 5350 1375
+Connection ~ 5225 1375
+Wire Wire Line
+	5225 1375 5225 1250
+Wire Wire Line
+	4925 1375 5225 1375
+Wire Wire Line
+	5725 1375 5625 1375
+$Comp
+L Device:C_Small C4
+U 1 1 5ECA0885
+P 5450 1375
+F 0 "C4" V 5275 1200 50  0000 L CNN
+F 1 "100nF" V 5350 1150 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5450 1375 50  0001 C CNN
+F 3 "~" H 5450 1375 50  0001 C CNN
+	1    5450 1375
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5ECA0126
+P 4925 1375
+F 0 "#PWR07" H 4925 1125 50  0001 C CNN
+F 1 "GND" H 4825 1375 50  0000 C CNN
+F 2 "" H 4925 1375 50  0001 C CNN
+F 3 "" H 4925 1375 50  0001 C CNN
+	1    4925 1375
+	1    0    0    -1  
+$EndComp
+Text GLabel 7150 1375 2    50   Input ~ 0
+ROW0
+Text GLabel 7150 1475 2    50   Input ~ 0
+COL12
+Text GLabel 7150 1575 2    50   Input ~ 0
+COL11
+Text GLabel 7150 1675 2    50   Input ~ 0
+COL10
+Text GLabel 7150 1775 2    50   Input ~ 0
+COL9
+Text GLabel 7150 1875 2    50   Input ~ 0
+COL8
+Text GLabel 7150 1975 2    50   Input ~ 0
+COL7
+Text GLabel 7150 2075 2    50   Input ~ 0
+COL6
+Text GLabel 7150 2875 2    50   Input ~ 0
+ROW1
+Text GLabel 6725 2575 2    50   Input ~ 0
+D+
+Text GLabel 6725 2475 2    50   Input ~ 0
+D-
+$Comp
+L Switch:SW_Push SW_BOOT1
+U 1 1 5EC71B98
+P 5100 2875
+F 0 "SW_BOOT1" H 5125 3125 50  0000 C CNN
+F 1 "TS-1187A-B-A-B" H 5000 3050 50  0000 C CNN
+F 2 "random-keyboard-parts:SKQGADE010" H 5100 3075 50  0001 C CNN
+F 3 "~" H 5100 3075 50  0001 C CNN
+	1    5100 2875
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR08
+U 1 1 5EC72660
+P 4900 2875
+F 0 "#PWR08" H 4900 2725 50  0001 C CNN
+F 1 "+3.3V" H 4900 2800 50  0000 C CNN
+F 2 "" H 4900 2875 50  0001 C CNN
+F 3 "" H 4900 2875 50  0001 C CNN
+	1    4900 2875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 5EC72F48
+P 5300 3000
+F 0 "R1" V 5150 3000 50  0000 C CNN
+F 1 "10k" V 5225 3000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5300 3000 50  0001 C CNN
+F 3 "~" H 5300 3000 50  0001 C CNN
+	1    5300 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 5EC72F52
+P 5300 3100
+F 0 "#PWR09" H 5300 2850 50  0001 C CNN
+F 1 "GND" H 5305 2927 50  0000 C CNN
+F 2 "" H 5300 3100 50  0001 C CNN
+F 3 "" H 5300 3100 50  0001 C CNN
+	1    5300 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5725 2875 5300 2875
+Wire Wire Line
+	5300 2900 5300 2875
+Connection ~ 5300 2875
+Wire Wire Line
+	6125 3075 6125 3175
+Wire Wire Line
+	6125 3175 6175 3175
+Wire Wire Line
+	6225 3175 6225 3075
+Connection ~ 6175 3175
+Wire Wire Line
+	6175 3175 6225 3175
 $EndSCHEMATC
