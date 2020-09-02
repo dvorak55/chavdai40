@@ -298,7 +298,11 @@ https://github.com/dvorak55/chavdai40/tree/master/hex
 ●キーを自分好みにカスタマイズして使いたい場合  
 QMK Configuratorというツールを使うと、簡単にプログラムをコンパイルしてバイナリファイルをダウンロードすることができます。  
 ↓  
-https://config.qmk.fm/#/chavdai40/LAYOUT_42key
+https://config.qmk.fm/#/chavdai40/rev1/LAYOUT_44key
+
+chavdai40/rev1と、chavdai40/rev2の選択肢がありますが、2020年9月2日時点で販売しているキットはすべて rev1 です。  
+なので、rev1を選んでキーカスタマイズしてください。（rev2でバイナリファイルを作成しても、rev1の本体では動作しません）  
+※まだrev2は販売しておりませんが、rev1とrev2の見分け方は、USB端子の右側にrev2と書いてあるものがrev2、書いてないものがrev1です。  
 
 ●どちらの場合も、バイナリファイルを書き込むためには「QMK Toolbox」というツールを使います。  
 ↓  
