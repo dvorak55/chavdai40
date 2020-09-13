@@ -306,10 +306,10 @@ Chavdai40%はQMKに対応したキーボードですので、キーマップを�
 
 以下の場所からバイナリファイルをダウンロードできます。  
 ##### rev1基板用のバイナリファイル  
-https://github.com/dvorak55/chavdai40/tree/master/rev1/hex  
+https://github.com/dvorak55/chavdai40/tree/master/hex/rev1  
 
 ##### rev2基板用のバイナリファイル  
-https://github.com/dvorak55/chavdai40/tree/master/rev2/hex  
+https://github.com/dvorak55/chavdai40/tree/master/hex/rev2  
 
 基本的にQWERTY配列のファイルをお使いになると思いますが、作者が使っているDvorak配列や、素晴らしいEucalyn配列も作りました。  
 
