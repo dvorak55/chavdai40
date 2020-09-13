@@ -80,6 +80,14 @@ Chavdai40%の本体
 ゴム足と予備の電子部品は包装紙にマスキングテープで貼り付けてあります  
 ![impl-32](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-32.jpg)
 
+## rev1とrev2について
+Chavdai40%の基板にはバージョンがあります。  
+2020年8月19日（水）〜2020年9月12日（土）の間にご購入された場合、バージョンはrev1です。  
+2020年9月13日（日）以降にご購入された場合、バージョンはrev2です。  
+rev2は、パッケージのロゴに以下のようにrev2と記載してあります。  
+![package-rev2](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/package-rev2.jpg)  
+また、rev2は、基板のUSB-C端子の右側にrev2と記載してありますので合わせてご確認ください。  
+バージョンの違いにより、後述するファームウェアのバイナリファイルのバージョンが異なります。  
 
 ## その他の問い合わせ先
 twitter: dombrick45 https://twitter.com/dombrick45  
@@ -284,7 +292,7 @@ Chavdai40%はQMKに対応したキーボードですので、キーマップを�
 そのためにQMKというソフトウェアをダウンロードし、ご自分のPCやMacでプログラムを書き換えてコンパイルして、  
 完成したバイナリファイルをキーボードに書き込むという作業が必要となるのですが……  
 
-●とりあえず試しに使ってみたい場合  
+#### ●とりあえず試しに使ってみたい場合  
 こちらで作成したキーマップを42キーと44キーそれぞれ3種類ご用意してあります。  
 ※3種類のキーマップで、レイヤーキーを押したときのキーは共通です。  
 42キー  
@@ -293,24 +301,33 @@ Chavdai40%はQMKに対応したキーボードですので、キーマップを�
 ![chavdai1-6keymaps](https://github.com/dvorak55/chavdai40/blob/master/keylayout_chavdai40/chavdai1-6keymaps.png)
 
 以下の場所からバイナリファイルをダウンロードできます。  
-https://github.com/dvorak55/chavdai40/tree/master/hex  
+##### rev1基板用のバイナリファイル  
+https://github.com/dvorak55/chavdai40/tree/master/rev1/hex  
+
+##### rev2基板用のバイナリファイル  
+https://github.com/dvorak55/chavdai40/tree/master/rev2/hex  
+
 基本的にQWERTY配列のファイルをお使いになると思いますが、作者が使っているDvorak配列や、素晴らしいEucalyn配列も作りました。  
 
-●キーを自分好みにカスタマイズして使いたい場合  
+#### ●キーを自分好みにカスタマイズして使いたい場合  
 QMK Configuratorというツールを使うと、簡単にプログラムをコンパイルしてバイナリファイルをダウンロードすることができます。  
 ↓  
-https://config.qmk.fm/#/chavdai40/rev1/LAYOUT_44key
+rev1の場合のURL  
+https://config.qmk.fm/#/chavdai40/rev1/LAYOUT_44key  
 
-chavdai40/rev1と、chavdai40/rev2の選択肢がありますが、2020年9月2日時点で販売しているキットはすべて rev1 です。  
-なので、rev1を選んでキーカスタマイズしてください。（rev2でバイナリファイルを作成しても、rev1の本体では動作しません）  
-※まだrev2は販売しておりませんが、rev1とrev2の見分け方は、USB端子の右側にrev2と書いてあるものがrev2、書いてないものがrev1です。  
+rev2の場合のURL  
+https://config.qmk.fm/#/chavdai40/rev2/LAYOUT_44key  
 
-●どちらの場合も、バイナリファイルを書き込むためには「QMK Toolbox」というツールを使います。  
+**chavdai40/rev1と、chavdai40/rev2の選択肢があります。**  
+2020年9月12日（土）以前にご購入された場合はバージョンがrev1ですので、rev1の方をご利用ください。  
+2020年9月13日（日）以降にご購入された場合（パッケージのロゴ、USB端子右側にrev2と記載されているものは）、rev2の方をご利用ください。  
+
+#### ●バイナリファイルを書き込むためには「QMK Toolbox」というツールを使います。  
 ↓  
 https://github.com/qmk/qmk_toolbox/releases
 
 このツールを使う時、Chavdai40%をDFUモードで起動しなければなりません。  
-●Chavdai40%をDFUモードで起動する方法  
+#### ●Chavdai40%をDFUモードで起動する方法  
 PCとChavdai40%をUSBケーブルで接続した状態で、以下の画像のように、本体中央に近いボタンを押しながら、本体端に近いボタンを押して離します。
 ![impl-28](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-28.jpg)
 すると、QMK ToolboxにDFUモードとして認識されます。  
@@ -319,9 +336,9 @@ PCとChavdai40%をUSBケーブルで接続した状態で、以下の画像の�
 サリチル酸氏（自キー界の導師のようなすごい人）のウェブサイトにわかりやすく掲載されておりますので、  
 ぜひご覧になってください。（私は自ら説明することを放棄する悪い人間）  
 
-●QMK Configuratorの使い方  
+#### ●QMK Configuratorの使い方  
 https://salicylic-acid3.hatenablog.com/entry/qmk-configurator  
-●QMK Toolboxの使い方  
+#### ●QMK Toolboxの使い方  
 https://salicylic-acid3.hatenablog.com/entry/qmk-toolbox  
 
 
