@@ -326,7 +326,7 @@ https://config.qmk.fm/#/chavdai40/rev2/LAYOUT_44key
 2020年9月12日（土）以前にご購入された場合はバージョンがrev1ですので、rev1の方をご利用ください。  
 2020年9月13日（日）以降にご購入された場合（パッケージのロゴ、USB端子右側にrev2と記載されているものは）、rev2の方をご利用ください。  
 
-#### ●バイナリファイルを書き込むためには「QMK Toolbox」というツールを使います。  
+#### ●バイナリファイルを書き込むためには「QMK Toolbox」というツールを使います。
 ↓  
 https://github.com/qmk/qmk_toolbox/releases
 
@@ -344,6 +344,12 @@ PCとChavdai40%をUSBケーブルで接続した状態で、以下の画像の�
 https://salicylic-acid3.hatenablog.com/entry/qmk-configurator  
 #### ●QMK Toolboxの使い方  
 https://salicylic-acid3.hatenablog.com/entry/qmk-toolbox  
+
+#### ※Linuxでバイナリファイルを書き込むための方法
+作者が確認しておらず申し訳ないのですが、Linux環境でバイナリファイルを書き込む方法があり、それをまとめて記事にしてくださっている方がおります。  
+Linuxでバイナリファイルを書き込む方は、こちらの記事を見てバイナリの書き込みをお願いいたします。  
+_＜＜＜ 自作キーボード(chavdai40)を作ったお話。 ＞＞＞_  
+https://qiita.com/_Shallot_/items/7171c74293b880f7b078  
 
 
 ### ９．キーマップが確定し、動作確認を完了する
