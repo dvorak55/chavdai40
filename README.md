@@ -78,7 +78,10 @@ https://shop.masking-tape.jp
 ※2023年8月以降にご購入されたキットは、白色の基板になります。  
 
 Chavdai40%の本体  
-![impl-31](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-31.jpg)
+![impl-31](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-31.jpg)  
+
+2023年8月以降にご購入の場合は白色基板です。
+![impl-2-white](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-2-white.jpg)  
 
 ゴム足は包装紙にマスキングテープで貼り付けてあります  
 ![impl-32](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-32.jpg)
@@ -175,7 +178,8 @@ Chavdai40%では「分割スペースキー」と「長いスペースキー」�
 
 ### ３．本体の表面（ちゃぶだいロゴのある方の面）にマスキングテープやリメイクシートを切り貼りする
 こちらの面が表面です。（2023年版は、基板の色が白色です）  
-![impl-2](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-2.jpg)
+![impl-2](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-2.jpg)  
+![impl-2-white](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/impl-2-white.jpg)  
 この組立手順では以下のリメイクシート（mtリメイクシート Kapitza　SUN）を用います。  
 https://shop.masking-tape.jp/products/detail.php?id=49
 ![kapitza-sun](https://github.com/dvorak55/chavdai40/blob/master/image-ver1/kapitza-sun.jpg)
