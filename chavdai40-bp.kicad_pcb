@@ -267,11 +267,11 @@
   (gr_arc (start 289.6 17) (end 294.6 17) (angle -90) (layer Edge.Cuts) (width 0.05))
   (gr_arc (start 289.6 99) (end 289.6 104) (angle -90) (layer Edge.Cuts) (width 0.05))
   (gr_arc (start 17 99) (end 12 99) (angle -90) (layer Edge.Cuts) (width 0.05))
-  (gr_arc (start 17 17) (end 17 12.0015) (angle -90) (layer Edge.Cuts) (width 0.05))
+  (gr_arc (start 17 17) (end 17 12) (angle -90) (layer Edge.Cuts) (width 0.05))
   (gr_line (start 17 104) (end 289.6 104) (layer Edge.Cuts) (width 0.05))
   (gr_line (start 294.6 99) (end 294.6 17) (layer Edge.Cuts) (width 0.05))
   (gr_line (start 12 17) (end 12 99) (layer Edge.Cuts) (width 0.05))
-  (gr_line (start 17 12.0015) (end 289.6 12) (layer Edge.Cuts) (width 0.05))
+  (gr_line (start 17 12) (end 289.6 12) (layer Edge.Cuts) (width 0.05))
 
   (zone (net 0) (net_name "") (layer B.Cu) (tstamp 5F47E9D2) (hatch edge 0.508)
     (connect_pads (clearance 0.508))

@@ -3,4 +3,5 @@
   (lib (name random-keyboard-parts)(type Legacy)(uri "${KIPRJMOD}/random-keyboard-parts.pretty/Schematic Library/random-keyboard-parts.lib")(options "")(descr ""))
   (lib (name Type-C)(type Legacy)(uri ${KIPRJMOD}/Type-C.pretty/Type-C.lib)(options "")(descr ""))
   (lib (name miyajima)(type Legacy)(uri ${KIPRJMOD}/miyajima-lib/miyajima.lib)(options "")(descr ""))
+  (lib (name chavdai40-rescue)(type Legacy)(uri ${KIPRJMOD}/chavdai40-rescue.lib)(options "")(descr ""))
 )
